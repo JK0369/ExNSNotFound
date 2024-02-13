@@ -35,10 +35,12 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-// terminating due to uncaught exception of type NSException
-tableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: true)
-//        }
+        /*
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            // terminating due to uncaught exception of type NSException
+            tableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: true)
+        }
+         */
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             print("test>", NSNotFound)
